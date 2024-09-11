@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+}
+body{
+    background: rgb(28, 28, 31);
+    color: white;
+
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    text-align: center;
+    padding: 3rem 1rem;
+    font-size: 2.3rem;
+}
+header input{
+    background-color: rgb(53, 53, 53);
+    width: 30rem;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.9rem;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 20px rgba(187, 181, 181, 0.11); 
+    outline: none;   
+}
+ul{
+    max-width: 30rem;
+    margin: auto;
+    padding: 3rem 0;
+}
+.list li{
+    display: flex;
+    font-size: 2rem;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+}
+input[type="checkbox"] {
+    
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background-image: url('../assets/images/icons8-x-48.png');
+    background-size: contain;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked {
+    background-image: url('../assets/images/icons8-check-48.png');
+    background-size: contain;
+  }
+  .alert{
+    display: none;
+  }
+  .open{
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(2, 2, 2, 0.112);
+  }
+  .container-alert{
+    background-color: rgb(79, 80, 80);
+    width: 30rem;
+    margin: 10rem auto;
+    padding: 2rem;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .resp{
+    display: inline-flex;
+    margin-top: 1rem;
+    gap: 3rem;
+  }
+  .resp p{
+    background-color: black;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20%;
+    text-align: center;
+  }
+  .resp p:hover{
+    background-color: rgb(118, 115, 115);
+  }
