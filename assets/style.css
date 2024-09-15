@@ -106,9 +106,17 @@ input[type="checkbox"] {
 
   .theme{
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
     background-color: transparent;
     border: none;
     padding: 2rem;
+  }
+  
+  @media (width > 600px){
+    .theme{
+      top: 0;
+      right: 0;
+      bottom:100%;
+    }
   }
