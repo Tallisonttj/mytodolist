@@ -7,14 +7,14 @@
     font-family: "Oswald", sans-serif;
 }
 body{
-    background: rgb(28, 28, 31);
+    background-color: rgb(28, 28, 31);
     color: white;
 
 }
 html{
     font-size: 62.5%;
 }
-header{
+header {
     text-align: center;
     padding: 3rem 1rem;
     font-size: 2.3rem;
@@ -89,4 +89,26 @@ input[type="checkbox"] {
   }
   .resp p:hover{
     background-color: rgb(118, 115, 115);
+  }
+
+  .inp-white{
+    background-color: rgb(205, 205, 205);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 20px rgba(8, 8, 8, 0.11); 
+    outline: none; 
+  }
+  .wht{
+    background-color: rgb(204, 204, 204);
+    color: rgb(0, 0, 0);
+  }
+
+  .theme{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    padding: 2rem;
   }

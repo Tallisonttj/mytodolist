@@ -1,5 +1,8 @@
 let input = document.querySelector('.input')
 let list  = document.querySelector('.list')
+let body = document.querySelector('body')
+let icon = document.querySelector('.icon')
+
 let tasks = []
 let selectTask = null
 
@@ -59,5 +62,37 @@ function renderlist(){
                 })
             })
         })
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme')
+
+    // Aplicar o tema salvo
+    if (savedTheme === 'light') {
+        body.classList.add('wht')
+        input.classList.add('inp-white')
+        icon.setAttribute('src', "assets/images/icons8-dark-48.png")
+    } else if (savedTheme === 'dark') {
+        body.classList.remove('wht')
+        input.classList.remove('inp-white')
+        icon.setAttribute('src', "assets/images/icons8-light-48.png")
+    }
+})
+
+let btheme = document.querySelector('.theme')
+btheme.addEventListener('click', darkMode)
+
+function darkMode() {
+    body.classList.toggle('wht')
+    input.classList.toggle('inp-white')
+
+    // Salvar o tema no localStorage
+    if (body.classList.contains('wht')) {
+        icon.setAttribute('src', "assets/images/icons8-dark-48.png")
+        localStorage.setItem('theme', 'light')
+    } else {
+        icon.setAttribute('src', "assets/images/icons8-light-48.png")
+        localStorage.setItem('theme', 'dark')
     }
 }
